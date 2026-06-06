@@ -13,3 +13,7 @@ The LiDAR sensors can be categorized into two broad groups:
 
 - Two aspects are noteworthy here: (1) the distance between adjacent scanner lines increases with growing distance and (b) the area in the direct circumference of the vehicle does not contain any 3d points. Both observations can be easily explained by a look at the geometry of the sensor-vehicle setup:
 ![lidar_vehicle_geometry](imgs/lidar_blind_spot.png)
+
+#### Waymo open dataset tutorial
+[colab notebook](https://colab.research.google.com/github/waymo-research/waymo-open-dataset/blob/master/tutorial/tutorial.ipynb#scrollTo=-pVhOfzLx9us)
+
