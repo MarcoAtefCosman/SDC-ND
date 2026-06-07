@@ -25,6 +25,7 @@ The LiDAR sensors can be categorized into two broad groups:
 
 #### Waymo open dataset tutorial
 [Waymo Frame Structure Details](https://github.com/Jossome/Waymo-open-dataset-document)
+
 [colab notebook](https://colab.research.google.com/github/waymo-research/waymo-open-dataset/blob/master/tutorial/tutorial.ipynb#scrollTo=-pVhOfzLx9us)
 
 [Scalability in Perception for Autonomous Driving: Waymo Open Dataset](https://arxiv.org/pdf/1912.04838)
