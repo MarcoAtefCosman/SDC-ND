@@ -14,6 +14,18 @@ The LiDAR sensors can be categorized into two broad groups:
 - Two aspects are noteworthy here: (1) the distance between adjacent scanner lines increases with growing distance and (b) the area in the direct circumference of the vehicle does not contain any 3d points. Both observations can be easily explained by a look at the geometry of the sensor-vehicle setup:
 ![lidar_vehicle_geometry](imgs/lidar_blind_spot.png)
 
+### The structure of frames in the Waymo dataset
+- The Waymo dataset stores information in .tfrecord files. All sequences contain approx. 200 individual frames, which have the following top-level structure: 
+    - LaserName
+    - CameraName
+    - RollingShutterReadOutDirection
+    - Frame
+    - Label
+- While the actual sensor data is stored in the Frame structure, we can use LaserName and CameraName to select specific sensors, which we want to access. For each laser and camera, there is a sub-branch nested under Frame.
+
 #### Waymo open dataset tutorial
+[Waymo Frame Structure Details](https://github.com/Jossome/Waymo-open-dataset-document)
 [colab notebook](https://colab.research.google.com/github/waymo-research/waymo-open-dataset/blob/master/tutorial/tutorial.ipynb#scrollTo=-pVhOfzLx9us)
+
+[Scalability in Perception for Autonomous Driving: Waymo Open Dataset](https://arxiv.org/pdf/1912.04838)
 
